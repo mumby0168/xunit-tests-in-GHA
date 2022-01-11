@@ -35,6 +35,6 @@ public class UnitTest1
             .Build();
         
         Assert.Equal("ABC", config.GetValue<string>("Test1"));
-        Assert.Equal("secret", config.GetValue<string>("Test__4"));
+        Assert.Equal("secret", config.GetValue<string>("Test4"));
     }
 }
