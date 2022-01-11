@@ -27,5 +27,7 @@ jobs:
     - name: Test
       env:
         Test1: ABC
+        Test2: CBA
         Test3: ${{ secrets.SecretA }}
+        Test__4: ${{ secrets.SecretA }}
       run: dotnet test --no-build --verbosity normal
